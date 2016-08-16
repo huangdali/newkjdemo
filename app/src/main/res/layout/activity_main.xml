@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.hdl.newkjdemo.newkjdemo.ui.main.MainActivity">
+
+    <include layout="@layout/custom_actionbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是MVP+Retrofit2.0+Rxjava结合的Demo"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="使用到的技术:\nMVP  框架\nRetrofit  网络请求\nRxJava  异步任务\nButterknife   注解 省去findviewbyid\nKlog  花样日志\nCallBack 回调思想 丢弃Handler\nRecycleView 高效地显示大量数据--->未来替代listview  gridview的控件\nCommonAdapter 鸿洋大神的RecycleView通用适配器\nGlide 高效的图片加载库\nandroid-Ultra-Pull-To-Refresh  下拉刷新\nClearEditText  自定义带清除所有内容的输入框控件\n状态栏一体化(设置状态栏的颜色与app主题色一致  没有过渡感)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_main_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="登录demo" />
+
+        <Button
+            android:id="@+id/btn_main_queryIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IP查询demo" />
+
+        <Button
+            android:id="@+id/btn_main_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="豆瓣Top250 demo" />
+    </LinearLayout>
+</LinearLayout>
