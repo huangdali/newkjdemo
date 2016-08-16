@@ -1,2 +1,0 @@
-# newkjdemo
-mvp+retrofit+rxjava
